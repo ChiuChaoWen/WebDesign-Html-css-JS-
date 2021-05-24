@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content ="width=device-width , initial-scale=1, maximum-scale=1" />
+	<title>CSS3 Flexbox</title>
+	
+	<link href="8.new.css" rel="stylesheet" type="text/css" media="all"/>
+	<!--這次是由外面寫一個CSS檔案來匯入引用避免造成本身HTML檔案肥大。*/
+	/*link href="style.css rel ="stylesheet"  type="text/css "media=all"*/
+	-->
+</head>
+<body>
+	<nav style="diaplay:none;">
+		<div class ="logo">Logo</div>
+		<div class ="menu">Menu</div>
+		<div class ="user">User</div>
+	</nav>
+	
+	<!-- RWD 用FLEX
+		規劃:
+			1200px 以上的規劃:4欄，固定尺寸就是最大1200px(1920、1366電腦常見尺寸)
+			500px~1200p之間的規劃:2欄，彈性尺寸(通常為平板尺寸)
+			500px以下:1欄，彈性尺寸(手機尺寸)
+	-->
+	
+	<main><!main 為外層的容器標籤*/>
+		<div class ="item">New1</div>
+		<div class ="item">New2</div>
+		<div class ="item">New3</div>
+		<div class ="item">New4</div>
+	</main>
+</body>
+</html>

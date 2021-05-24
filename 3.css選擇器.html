@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="uts-8" />
+<title>CSS 選擇器詳細介紹</title>
+<style type="text/css">
+	
+/*標籤選擇器 像是控制body h3的 前面都不用加".*/
+	
+	body{font-size:16px;font-family:"微軟正黑體"}	
+	/*直接控制BODY裡面所有的字體大小*/
+	
+	h3{font-size:22px;text-decoration:underline}
+	/*直接控制h3小標題裡面的字體大小*/
+	
+/*class選擇器 前面要加"."，可搭配加上div或是ul指定特定區塊*/
+
+	.content{padding:10px;border:1px dashed #888888;}
+	div.content2{padding:10px;border:3px dashed purple;}
+	ul.content{padding:20;border:2px solid #888888}
+	
+/*id 選擇器  前面加#字號，針對id 的名稱物件進行設定，主要給JSP設定*/
+	
+	#btn{border:1px solid yellow;padding:8px;}
+
+/*虛擬選擇器:搭配其他選擇器使用，當目標被選取成為焦點時，套用設定*/
+	
+	/*:hover 虛擬選擇器:滑鼠移到目標上，可套用一組設定*/
+	#btn:hover{background-color:red}
+	
+	/*:focus 虛擬選擇器:*/
+	input:focus{border:2px solid blue}
+	
+/*階層式選擇器:搭配其他選擇器使用*/
+	
+	.content a{color:red}
+	.content2 a{color:purple}
+</style>
+</head>
+
+<body>
+	<h3 >我的自我介紹</h3>
+		<div class="content">
+			大家好，我是邱昭文。
+		</div>
+	<h3>我的最愛連結</h3>
+		<div class="content">
+			 <a href="http://www.google.com">Google</a>
+			 <br style="margin-top:15px"> </br>
+			 <a href="http://www.facebook.com">Facebook</a>
+		</div>
+	<h3>我的作品</h3>
+		<ul class="content">
+			<li>1.</li>
+			<li style="margin-top:15px">2.</li>
+		</ul>
+	<h3>我的最愛連結2</h3>
+		<div class="content2">
+			 <a href="http://www.google.com">Google</a>
+			 <br style="margin-top:15px"> </br>
+			 <a href="http://www.facebook.com">Facebook</a>
+		</div>
+	<h3>和我連絡</h3>
+	<div class="content">
+	填寫訊息<input type="text"/> <button id="btn">送出</button>
+	</div>
+	
+	
+</body>
+</html>

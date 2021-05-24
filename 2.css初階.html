@@ -1,0 +1,48 @@
+
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title>CSS 教學</title>
+	<style type="text/css">
+	.box{
+		position:relative;left:100px;
+		width:30px;height:30px;background-color:green
+	}
+	/*position:absolute 為絕對定位，該標籤位置用left top bottom right決定>*/
+	/*position:relative 為相對定位，標籤也是用同上座標決定位置*/
+	/*套用CSS選擇器，將會重複用的的設定寫道以下的大括號，可集中管理設定*/
+	
+	.title{font-weight:bold;font-size:30px}
+	.content{height:200px;width:400px;padding:20px;border:1px solid blue;margin-top:20px;margin-bottom:20px}
+	.keyword{color:red}
+	</style>
+</head>
+<body>
+	
+	<div class="title">今天天氣不錯</div>    
+	<!div代表區塊或段落，可寫文章用> <!style裡面輸入CSS語言來調整自行粗細等等>
+	
+	<div class="content">
+	我去公園散步，打<span class = "keyword">SDVX</span>。
+	<br/>把I刷分了。
+	</div>
+	
+	<! span 可對行內特定文字加以圈選 做預作之改動>
+	<!margin 可設定區塊之間上下左右的距離>
+	<!border 幫文字家邊框設定樣式>
+	<!padding 設定文字快離邊框的距離>
+	<!width 可設定文字塊邊框的寬度，預設跟網頁一樣寬>
+	<!height可設定文字塊邊框的高度，預設跟文字為跟著文字多寡，通常不用特定設定>
+	<!width和height只能用在diV這種文字區塊，不能用在span>
+	<!br可做文字段落的換行>
+	<div class="box"></div>
+	
+	
+	<div class="title"> 今天天氣還可以 
+	</div>
+	<div class="content">
+	我去太古歡樂園打<span class="keyword">MAI</span>。
+	<br/>把聖劍<span style="position:relative;top:-8px">2</span>刷分了。
+	</div>
+</body
+</html>

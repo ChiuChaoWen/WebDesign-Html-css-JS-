@@ -1,0 +1,50 @@
+nav{
+		display:flex;
+}
+nav>.logo{
+		flex:auto;
+		background-color:#ffcccc;
+}
+nav>.menu{/*flex:none沒有彈性固定尺寸，flex:auto盡量把容器空間張滿，隨著畫面調整*/
+		flex:auto;
+		background-color:#ccccff;
+}
+nav>.user{
+		flex:auto;
+		background-color:#ccffcc;
+}
+
+/*main 樣式設定*/
+main{/*容器*/
+	display:flex;flex-wrap:wrap; 
+	/*flex-wrap:wrap為重點，它可以讓我們的表格內容隨著螢幕大小做跟著
+	自動換行與自動調整欄為寬度以符合螢幕。再搭配底下的@media寫各種條件下如何調整*/
+	
+	justify-content:center;/*水平調整，置左為flex-start、靠右為flex-end*/
+	align-items:stretch;
+	/*垂直調整，置上為flex-start、置下為flex-end、置中為center，
+	stretch為延展，每一欄會同樣的高度*/
+	background-color:#cccccc;
+	
+	}
+
+main>.item{/*項目felx:none 代表不能彈性縮放*/
+	flex:none;
+	margin:15px;width:200px;
+	justify-content:flex-start;
+	background-color:#ffcccc;}
+/*1200以上的尺寸時套用*/
+	
+/*要達成並攔(擺在同一列)，就是用flex ，在此例子中要將MAIN裡面的三個div.ITEM切欄位
+，所以MAIN以及Main>.item 裡面都寫一個flex*/
+/*並且flex:none或是auto可以調整欄的寬度,none為固定尺寸，所以要多寫width來定寬度
+auto則是可以自己隨畫面大小調整。*/
+
+
+@media screen and (max-width:1000px){/*在螢幕為1000以下時的調整*/
+	main >.item {width:45%;}
+
+}
+@media screen and (max-width:500px){
+	main >.item {width:90%;}/*在螢幕為500以下時的調整*/
+}

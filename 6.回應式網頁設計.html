@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta charset="utf-8"> </meta>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	/*要做回應式網頁是針對於手機顯示網頁時的狀況，要多這行meta,initial 和 maximum scale是
+	用來限制手機瀏覽網頁時的縮放比例*/
+	
+	<title>阿文的自我介紹</title>
+	<style type ="text/css">
+	.head{background-color:#003344;color:white;font-weight:bold;font-size:30px;
+		  text-align:center;padding:10px;}
+		  /*text-align:center可將字置中*/
+		  
+	.content{width:1000px;margin-left:auto;margin-right:auto;border:1px solid black}
+	/*margin-left:auto和margin-right:auto可以將你要的字塊(包含字、線、圖)置中*/
+	
+	.box{width:280px;padding:10px;margin:10px;background-color:white;
+		 display:inline-block;vertical-align:top;
+		 text-align:center;height:150px;line-height:40px}
+		 /*line-height 調整行距。height則是指調整BOX本身高度*/
+		 /*若想將三列分開的段落擺在同一列，用display:inline-block，*/
+		 /*可再用vertical-align:top垂直往上對齊*/
+		 
+	.title{font-weight:bold}
+	
+	@media screen and (max-width:600px){
+		.content{width:100%;text-align:center}
+	 }
+	/*當使用者的螢幕寬度最大是600px的時候，套用大括號裡面的CSS設定*/
+	
+	</style>
+</head>
+
+<body style="margin:0px;background-color:#eeeeee">
+	<div class ="head">阿文自我介紹</div>
+	<div class="content">
+		<div class= "box">
+			<div class="title">個人資料</div>
+			<div>名稱:邱昭文</div>
+			<div>領域:SDVX</div>
+		</div>
+			
+		<div class= "box">
+			<div class="title">段位名稱</div>
+			<div>暴龍天</div>
+			<div>V:19.10</div>
+		</div>
+		<div class= "box">
+			<div class="title">與我聯絡</div>
+			<div>EMAIL</div>
+			<div>PHONE</div>
+			<div>MESSAGE</div>
+		</div>
+	</div>
+		
+</body>
+
+</html>
